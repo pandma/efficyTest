@@ -1,0 +1,18 @@
+body {
+    margin-top: 5%;
+    margin-left: 30%;
+}
+
+#formTitle {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+#btn {
+    margin-top: 3%;
+    width: 150px;
+}
+
+#result {
+    margin-top: 5%;
+}

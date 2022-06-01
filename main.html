@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Efficy Test</title>
+</head>
+
+<body>
+    <div class="container">
+        <dib class="row">
+            <div class="col-6">
+                <h3 id="formTitle">Costumer Contact Form</h3>
+                <form onsubmit="main.handleForm(event)">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="disabledTextInput">Susccess</label>
+                            <input type="text" id="disabledTextInput" class="form-control" placeholder="Code" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="disabledSelect">Select status</label>
+                            <select onchange="main.getVal()" id="disabledSelect" class="form-control">
+                                <option>Disabled select</option>
+                                <option value="1">1. Initial Contact</option>
+                                <option value="2">2. Demonstration</option>
+                                <option value="3">3. Proposal</option>
+                                <option value="4">4. Negotiation</option>
+                                <option value="5">5. Order</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <div id="result">Waiting for form submit...</div>
+                            </div>
+                        </div>
+                        <button id="btn" type="submit" class="btn btn-primary">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </dib>
+    </div>
+
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
